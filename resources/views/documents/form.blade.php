@@ -1,0 +1,12 @@
+<x-layouts.app>
+    <a class="back-link" href="{{ $document ? route('documents.show', $document) : route('library') }}">← Back to {{ $document ? 'document' : 'your library' }}</a>
+    <section class="page-heading"><div><span class="eyebrow">MAKE ROOM FOR A LITTLE MORE CONTEXT</span><h1>{{ $document ? 'Keep the knowledge current.' : 'Add something worth keeping.' }}</h1><p>{{ $document ? 'Save a new version. The previous source stays available in its history.' : 'A handbook, a project note, a decision. Give it a good home.' }}</p></div></section>
+    <div class="editor-layout"><form class="editor-panel" method="POST" enctype="multipart/form-data" action="{{ $document ? route('documents.update', $document) : route('documents.store') }}">
+        @csrf
+        @if ($document)@method('PATCH')<input type="hidden" name="version" value="{{ old('version', $document->version) }}">@endif
+        <label for="title">Document title <span>Make it easy to recognize</span></label><input id="title" name="title" value="{{ old('title', $document?->title) }}" required maxlength="120" placeholder="e.g. Our project handover notes">
+        <label for="content">Document text <span>At least 20 characters</span></label><textarea id="content" name="content" rows="15" maxlength="65536" placeholder="Paste your plain text or Markdown here. Separate ideas with a blank line.">{{ old('content', $version?->content) }}</textarea>
+        <div class="upload-field"><span class="upload-icon">↑</span><div><label for="file">Or choose a text file</label><p>.txt or .md · UTF-8 · Maximum 64 KB</p><input id="file" name="file" type="file" accept=".txt,.md,text/plain,text/markdown"><small>A chosen file replaces the text above. Files are read as text and are never executed.</small></div></div>
+        <div class="editor-actions"><a href="{{ $document ? route('documents.show', $document) : route('library') }}">Cancel</a><button class="button primary" type="submit">{{ $document ? 'Save new version' : 'Add to library' }} <span>↗</span></button></div>
+    </form><aside class="editor-guide"><span class="guide-icon">✧</span><h2>A little structure<br>helps a lot.</h2><p>Keep paragraphs focused on one idea. Give your document a title you'd search for later.</p><ul><li>Every result links to its source.</li><li>New versions replace the search index.</li><li>Past versions remain readable.</li><li>Only your browser session can access this library.</li></ul><div class="guide-note">This is an independent demo. Please use fictional information.</div></aside></div>
+</x-layouts.app>
