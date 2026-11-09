@@ -25,6 +25,10 @@ These sources establish a company-project lead, not the resume subject's partici
 
 Search uses the latest document versions and returns at most twelve passages (four in question mode). It removes common English question words, uses two small documented alias groups (`response/respond` and `prepare/preparation/checklist`), and prioritizes matches covering all query concepts, then the first two, before broad individual-term matches. Sources that do not match the query produce a visible no-result state. This is an English-oriented keyword/Porter-stemmed retrieval demo, not a production RAG system or an AI model integration.
 
+## Workbook roadmap
+
+Read the [simulation roadmap and feature-to-source map](docs/simulation-roadmap.md) derived from `portfolio_daily_activity_simulation_2023_2026.xlsx`. Its dates and slot counts are hypothetical planning data. Commits retain their actual creation dates.
+
 ## Run locally
 
 Requirements: PHP 8.5 recommended (8.4.1 minimum), Composer 2, SQLite with FTS5, and PDO SQLite, mbstring, intl, DOM/XML and fileinfo extensions. No JavaScript build or external service is required.

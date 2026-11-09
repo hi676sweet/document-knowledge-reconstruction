@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "classification": "SYNTHETIC PLANNING DATA - NOT HISTORICAL GIT DATA",
+  "project": "Sourcebook",
+  "prepared_on": "2026-11-10",
+  "source_file": "portfolio_daily_activity_simulation_2023_2026.xlsx",
+  "source_sha256": "2603bf41d899d5216e935309785acdd4b4748bccf722b1b5fd2e5161b621b9de",
+  "sheets_used": [
+    "Overview",
+    "Daily Plan",
+    "Commit Schedule",
+    "Monthly Roadmap",
+    "Repository Notes"
+  ],
+  "simulation_start": "2025-08-01",
+  "simulation_end": "2026-03-31",
+  "planned_weekdays": 173,
+  "synthetic_planned_slots": 1038,
+  "planned_slots_per_weekday": 6,
+  "status": "Synthetic plan",
+  "phase_days": {
+    "Architecture & scope": 17,
+    "Core data model": 26,
+    "Primary workflows": 42,
+    "Search & usability": 26,
+    "Integrity & security": 24,
+    "Regression testing": 21,
+    "Polish & documentation": 17
+  },
+  "work_areas": [
+    "knowledge-library use cases",
+    "version retention",
+    "SQLite schema",
+    "workspace boundaries",
+    "upload constraints",
+    "passage citation requirements",
+    "FTS5 search design",
+    "sample documents",
+    "document metadata",
+    "full-text index",
+    "workspace sessions",
+    "passage boundaries",
+    "source reference IDs",
+    "version records",
+    "TXT/Markdown uploads",
+    "document deletion",
+    "question view",
+    "version updates",
+    "passage extraction",
+    "paste-to-import",
+    "source navigation",
+    "search index maintenance",
+    "term highlighting",
+    "query normalization",
+    "search aliases",
+    "empty result states",
+    "stemming rules",
+    "citation links",
+    "search relevance ranking",
+    "stale version rejection",
+    "bounded resource quotas",
+    "query parameter safety",
+    "safe file handling",
+    "session isolation",
+    "UTF-8 and binary validation",
+    "atomic reindexing",
+    "deletion cascade tests",
+    "Unicode chunking",
+    "index replacement tests",
+    "upload abuse tests",
+    "version-specific citations",
+    "cross-workspace denial",
+    "real SQLite FTS bootstrap",
+    "README limitations",
+    "source clarity",
+    "maintenance notes",
+    "keyboard controls",
+    "CI coverage",
+    "responsive reading view",
+    "demo fixture quality"
+  ],
+  "monthly_roadmap": [
+    {
+      "month": "2025-08",
+      "planned_weekdays": 21,
+      "synthetic_planned_slots": 126,
+      "topics": [
+        "knowledge-library use cases",
+        "version retention",
+        "SQLite schema",
+        "workspace boundaries"
+      ]
+    },
+    {
+      "month": "2025-09",
+      "planned_weekdays": 22,
+      "synthetic_planned_slots": 132,
+      "topics": [
+        "full-text index",
+        "workspace sessions",
+        "passage boundaries",
+        "source reference IDs"
+      ]
+    },
+    {
+      "month": "2025-10",
+      "planned_weekdays": 23,
+      "synthetic_planned_slots": 138,
+      "topics": [
+        "TXT/Markdown uploads",
+        "document deletion",
+        "question view",
+        "version updates"
+      ]
+    },
+    {
+      "month": "2025-11",
+      "planned_weekdays": 20,
+      "synthetic_planned_slots": 120,
+      "topics": [
+        "TXT/Markdown uploads",
+        "document deletion",
+        "question view",
+        "version updates"
+      ]
+    },
+    {
+      "month": "2025-12",
+      "planned_weekdays": 23,
+      "synthetic_planned_slots": 138,
+      "topics": [
+        "query normalization",
+        "search aliases",
+        "empty result states",
+        "stemming rules"
+      ]
+    },
+    {
+      "month": "2026-01",
+      "planned_weekdays": 22,
+      "synthetic_planned_slots": 132,
+      "topics": [
+        "stemming rules",
+        "citation links",
+        "stale version rejection",
+        "bounded resource quotas"
+      ]
+    },
+    {
+      "month": "2026-02",
+      "planned_weekdays": 20,
+      "synthetic_planned_slots": 120,
+      "topics": [
+        "stale version rejection",
+        "query parameter safety",
+        "deletion cascade tests",
+        "Unicode chunking"
+      ]
+    },
+    {
+      "month": "2026-03",
+      "planned_weekdays": 22,
+      "synthetic_planned_slots": 132,
+      "topics": [
+        "cross-workspace denial",
+        "real SQLite FTS bootstrap",
+        "deletion cascade tests",
+        "README limitations"
+      ]
+    }
+  ],
+  "commit_timestamp_changes": false,
+  "historical_completion_claim": false
+}
